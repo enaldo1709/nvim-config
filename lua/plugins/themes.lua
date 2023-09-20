@@ -18,6 +18,19 @@ require('vscode').setup({
         Cursor = { fg=c.vscDarkBlue, bg=c.vscLightGreen, bold=true },
     }
 })
-require('vscode').load()
+--require('vscode').load()
+
+require("tokyonight").setup({
+	-- your configuration comes here
+	-- or leave it empty to use the default settings
+	style = "night", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+})
+
+local theme = "tokyonight"
+
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. theme)
+if not status_ok then
+	vim.notify("colorscheme " .. theme .. " not found")
+end
 
 
