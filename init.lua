@@ -5,7 +5,7 @@ require('basic-config')
 require('lazy-plug')
 
 -- plugins settings
-require('plugins.vscode-theme')
+require('plugins.themes')
 require('plugins.nvim-tree-config')
 require('plugins.lualine-config')
 require('plugins.treesitter-config')

@@ -69,5 +69,10 @@ require("lazy").setup({
 	  tag = "legacy",
 	  event = "LspAttach",
 	},
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+	}
 })
 
